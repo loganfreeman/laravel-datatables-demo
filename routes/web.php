@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('datatables', 'DatatablesController@getIndex');
 
 Route::get('datatables/data', 'DatatablesController@anyData')->name('datatables.data');
+
+Route::get('ip', 'GeoIpController@getIndex')->name('geoip');
