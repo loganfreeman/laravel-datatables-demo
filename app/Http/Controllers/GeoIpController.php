@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-
 use GeoIP;
+
+use Hashids;
 
 class GeoIpController extends Controller
 {
@@ -19,6 +19,12 @@ class GeoIpController extends Controller
   {
       $location = GeoIP::getLocation();
       return view('geoip.index')->with(compact('location'));
+  }
+
+  public function getHash(Request $request, $id)
+  {
+      $hash = Hashids::encode(intval($id));
+      return view('geoip.hash', ['id' => $id, 'hash' => $hash]);
   }
 
 }

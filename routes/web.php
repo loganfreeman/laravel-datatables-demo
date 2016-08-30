@@ -20,3 +20,5 @@ Route::get('datatables', 'DatatablesController@getIndex');
 Route::get('datatables/data', 'DatatablesController@anyData')->name('datatables.data');
 
 Route::get('ip', 'GeoIpController@getIndex')->name('geoip');
+
+Route::get('any/{id}', ['as' => 'any.token', 'uses' => 'GeoIpController@getHash'] );

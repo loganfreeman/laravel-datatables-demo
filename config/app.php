@@ -180,6 +180,8 @@ return [
         Yajra\Datatables\DatatablesServiceProvider::class,
         Torann\GeoIP\GeoIPServiceProvider::class,
 
+        Vinkla\Hashids\HashidsServiceProvider::class,
+
     ],
 
     /*
@@ -228,6 +230,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Datatables' => Yajra\Datatables\Facades\Datatables::class,
         'GeoIP' => Torann\GeoIP\GeoIPFacade::class,
+
+        'Hashids' => Vinkla\Hashids\Facades\Hashids::class,
 
     ],
 
