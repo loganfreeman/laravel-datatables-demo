@@ -197,6 +197,8 @@ return [
         PragmaRX\Tracker\Vendor\Laravel\ServiceProvider::class,
 
         Arcanedev\NoCaptcha\NoCaptchaServiceProvider::class,
+
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
     ],
 
     /*
@@ -264,6 +266,11 @@ return [
         'Tracker' => PragmaRX\Tracker\Vendor\Laravel\Facade::class,
 
         'Captcha' => Arcanedev\NoCaptcha\Facades\NoCaptcha::class,
+
+        'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
+        'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
+        'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
     ],
 
 ];

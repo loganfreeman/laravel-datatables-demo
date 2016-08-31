@@ -21,6 +21,8 @@
                 padding-top: 40px;
             }
         </style>
+
+        @yield('head')
     </head>
     <body>
         <div class="container">
