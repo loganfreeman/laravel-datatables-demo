@@ -9,21 +9,24 @@ use App\Http\Requests;
 use Illuminate\Routing\Controller as BaseController;
 use Kris\LaravelFormBuilder\FormBuilder;
 
-use App\Forms\SongForm;
+use App\Http\Requests\MarkdownFormRequest;
+
+use GrahamCampbell\Markdown\Facades\Markdown;
+
 
 class MarkdownController extends BaseController
 {
-    public function create(FormBuilder $formBuilder)
+    public function create()
     {
-      $form = $formBuilder->create(SongForm::class, [
-          'method' => 'POST',
-          'url' => route('markdown.show')
-      ]);
-      return view('markdown.create', compact('form'));
+
+      return view('markdown.show');
     }
 
-    public function show()
+    public function show(MarkdownFormRequest $request)
     {
-      return view('markdown.show');
+      $message = $request->input('markdown_text');
+      $markdown = Markdown::convertToHtml($message);
+      return \Redirect::route('markdown')
+         ->with(compact('message', 'markdown'));
     }
 }
