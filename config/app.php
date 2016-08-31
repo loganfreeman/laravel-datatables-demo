@@ -193,6 +193,8 @@ return [
         Spatie\PaginateRoute\PaginateRouteServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
+
+        PragmaRX\Tracker\Vendor\Laravel\ServiceProvider::class,
     ],
 
     /*
@@ -256,6 +258,8 @@ return [
         'PaginateRoute' => Spatie\PaginateRoute\PaginateRouteFacade::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
+        'Tracker' => PragmaRX\Tracker\Vendor\Laravel\Facade::class,
     ],
 
 ];
