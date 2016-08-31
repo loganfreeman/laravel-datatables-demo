@@ -37,9 +37,7 @@ class MarkdownController extends BaseController
       if ($validator->fails()) {
           $errors = $validator->messages();
 
-          return redirect('markdown')
-                      ->withErrors($validator)
-                      ->withInput();
+          // return redirect('markdown')->withErrors($validator)->withInput();
       }
 
       $message = $request->input('markdown_text');
