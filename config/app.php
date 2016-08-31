@@ -182,6 +182,11 @@ return [
 
         Vinkla\Hashids\HashidsServiceProvider::class,
 
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -232,6 +237,13 @@ return [
         'GeoIP' => Torann\GeoIP\GeoIPFacade::class,
 
         'Hashids' => Vinkla\Hashids\Facades\Hashids::class,
+
+        'Markdown' => GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+
 
     ],
 

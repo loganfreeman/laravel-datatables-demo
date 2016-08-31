@@ -9,7 +9,10 @@
         "laravel/framework": "5.3.*",
         "yajra/laravel-datatables-oracle": "^6.18",
         "torann/geoip": "0.2.*@dev",
-        "vinkla/hashids": "^2.4"
+        "vinkla/hashids": "^2.4",
+        "graham-campbell/markdown": "^6.0",
+        "kris/laravel-form-builder": "1.*",
+        "laravelcollective/html": "^5.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -4,4 +4,5 @@
 <div class="jumbotron">
   <p>{!! $id !!}</p>
   <p>{!! $hash !!}</p>
+</div>
 @stop
