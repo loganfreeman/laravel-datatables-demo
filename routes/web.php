@@ -28,3 +28,7 @@ Route::get('markdown',
   ['as' => 'markdown', 'uses' => 'MarkdownController@create']);
 Route::post('markdown',
   ['as' => 'markdown.show', 'uses' => 'MarkdownController@show']);
+
+
+Route::post('download/pdf',
+  ['as' => 'markdown.download', 'uses' => 'MarkdownController@download']);

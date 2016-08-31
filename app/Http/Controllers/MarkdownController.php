@@ -13,6 +13,9 @@ use App\Http\Requests\MarkdownFormRequest;
 
 use GrahamCampbell\Markdown\Facades\Markdown;
 
+use App;
+
+use Illuminate\Http\Response;
 
 class MarkdownController extends BaseController
 {
@@ -28,5 +31,21 @@ class MarkdownController extends BaseController
       $markdown = Markdown::convertToHtml($message);
       return \Redirect::route('markdown')
          ->with(compact('message', 'markdown'));
+    }
+
+    public function download(MarkdownFormRequest $request)
+    {
+      $message = $request->input('markdown_text');
+      $markdown = Markdown::convertToHtml($message);
+
+      $snappy = App::make('snappy.pdf');
+      return new Response(
+          $snappy->getOutputFromHtml($markdown),
+          200,
+          array(
+              'Content-Type'          => 'application/pdf',
+              'Content-Disposition'   => 'attachment; filename="file.pdf"'
+          )
+      );
     }
 }

@@ -46,4 +46,25 @@
         array('class'=>'btn btn-primary')) !!}
   </div>
   {{ Form::close() }}
+
+
+  {{ Form::open(array(
+      'route'       => 'markdown.download',
+      'class' => 'form'
+  )) }}
+  <div class="form-group">
+  {{ Form::label('markdown', 'Markdown text') }}
+
+  {{ Form::textarea('markdown_text', null,
+     array('required',
+              'class'=>'form-control',
+              'id' => 'markdown_text')) }}
+  </div>
+
+  <div class="form-group">
+      {!! Form::submit('Download PDF',
+        array('class'=>'btn btn-primary')) !!}
+  </div>
+  {{ Form::close() }}
+
 @stop
