@@ -6,7 +6,7 @@
 
   <ul>
       @foreach($errors->all() as $error)
-          <li>{{ $error }}</li>
+          <li class="alert alert-warning">{{ $error }}</li>
       @endforeach
   </ul>
 
@@ -45,6 +45,7 @@
       {!! Form::submit('Submit',
         array('class'=>'btn btn-primary')) !!}
   </div>
+  {!! Form::captcha() !!}
   {{ Form::close() }}
 
 
@@ -65,6 +66,7 @@
       {!! Form::submit('Download PDF',
         array('class'=>'btn btn-primary')) !!}
   </div>
+  {!! Form::captcha() !!}
   {{ Form::close() }}
 
 @stop

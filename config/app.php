@@ -195,6 +195,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
 
         PragmaRX\Tracker\Vendor\Laravel\ServiceProvider::class,
+
+        Arcanedev\NoCaptcha\NoCaptchaServiceProvider::class,
     ],
 
     /*
@@ -260,6 +262,8 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         'Tracker' => PragmaRX\Tracker\Vendor\Laravel\Facade::class,
+
+        'Captcha' => Arcanedev\NoCaptcha\Facades\NoCaptcha::class,
     ],
 
 ];

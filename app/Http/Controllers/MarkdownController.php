@@ -17,6 +17,8 @@ use App;
 
 use Illuminate\Http\Response;
 
+use Validator;
+
 class MarkdownController extends BaseController
 {
     public function create()
@@ -27,6 +29,19 @@ class MarkdownController extends BaseController
 
     public function show(MarkdownFormRequest $request)
     {
+      $validator = Validator::make($request->all(), [
+          // Other validation rules...
+          'g-recaptcha-response' => 'required|captcha',
+      ]);
+
+      if ($validator->fails()) {
+          $errors = $validator->messages();
+
+          return redirect('markdown')
+                      ->withErrors($validator)
+                      ->withInput();
+      }
+
       $message = $request->input('markdown_text');
       $markdown = Markdown::convertToHtml($message);
       return \Redirect::route('markdown')
