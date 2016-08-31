@@ -34,3 +34,7 @@ Route::post('markdown',
 
 Route::post('download/pdf',
   ['as' => 'markdown.download', 'uses' => 'MarkdownController@download']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
