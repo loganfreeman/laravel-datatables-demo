@@ -191,6 +191,8 @@ return [
         Barryvdh\Snappy\ServiceProvider::class,
 
         Spatie\PaginateRoute\PaginateRouteServiceProvider::class,
+
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -252,6 +254,8 @@ return [
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
 
         'PaginateRoute' => Spatie\PaginateRoute\PaginateRouteFacade::class,
+
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
