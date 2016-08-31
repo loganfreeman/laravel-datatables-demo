@@ -31,4 +31,9 @@ class DatatablesController extends Controller
   {
       return Datatables::of(User::query())->make(true);
   }
+
+  public function users()
+  {
+    return view('datatables.users', ['users' => \App\User::simplePaginate(5)]);
+  }
 }

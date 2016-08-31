@@ -189,6 +189,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
         Barryvdh\Snappy\ServiceProvider::class,
+
+        Spatie\PaginateRoute\PaginateRouteServiceProvider::class,
     ],
 
     /*
@@ -249,7 +251,7 @@ return [
         'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
 
-
+        'PaginateRoute' => Spatie\PaginateRoute\PaginateRouteFacade::class,
     ],
 
 ];
