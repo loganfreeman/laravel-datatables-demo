@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f340eaf152cc27b924fdab22656004f",
-    "content-hash": "f82b578f4bcbc5cc10474600687ea403",
+    "hash": "d263189e95f733af630e5c45d468b902",
+    "content-hash": "9597eb86387c180ae866dc516b58a791",
     "packages": [
         {
             "name": "arcanedev/no-captcha",
@@ -784,6 +784,55 @@
                 "youtube"
             ],
             "time": "2016-01-21 04:26:38"
+        },
+        {
+            "name": "hootlex/laravel-friendships",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hootlex/laravel-friendships.git",
+                "reference": "22106d5a681fb8b391175f4530e61b7fdfcb6a5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hootlex/laravel-friendships/zipball/22106d5a681fb8b391175f4530e61b7fdfcb6a5d",
+                "reference": "22106d5a681fb8b391175f4530e61b7fdfcb6a5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.3.2",
+                "fzaninotto/faker": "~1.4",
+                "laravel/laravel": "5.*",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hootlex\\Friendships\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hootlex",
+                    "email": "hootlex@icloud.com"
+                }
+            ],
+            "description": "This package gives Eloquent models the ability to manage their friendships.",
+            "keywords": [
+                "eloqent",
+                "friend-system",
+                "friends",
+                "friendships",
+                "laravel"
+            ],
+            "time": "2016-08-29 23:26:40"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2556,6 +2605,42 @@
             "time": "2016-03-09 05:03:14"
         },
         {
+            "name": "rachidlaasri/laravel-installer",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RachidLaasri/LaravelInstaller.git",
+                "reference": "c150d5918ec5e1cc1adfcd7e06f90200fb96c329"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RachidLaasri/LaravelInstaller/zipball/c150d5918ec5e1cc1adfcd7e06f90200fb96c329",
+                "reference": "c150d5918ec5e1cc1adfcd7e06f90200fb96c329",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RachidLaasri\\LaravelInstaller\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rachid Laasri",
+                    "email": "rashidlaasri@gmail.com"
+                }
+            ],
+            "description": "Laravel web installer",
+            "time": "2016-05-17 08:19:42"
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.5.0",
             "source": {
@@ -3979,6 +4064,53 @@
                 "environment"
             ],
             "time": "2016-06-14 14:14:52"
+        },
+        {
+            "name": "webpatser/laravel-uuid",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/laravel-uuid.git",
+                "reference": "6ed2705775e3edf066b90e1292f76f157ec00507"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/laravel-uuid/zipball/6ed2705775e3edf066b90e1292f76f157ec00507",
+                "reference": "6ed2705775e3edf066b90e1292f76f157ec00507",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.5.*",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "suggest": {
+                "paragonie/random_compat": "A random_bytes Php 5.x polyfill."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Webpatser\\Uuid": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Kempen",
+                    "email": "christoph@downsized.nl"
+                }
+            ],
+            "description": "Class to generate a UUID according to the RFC 4122 standard. Support for version 1, 3, 4 and 5 UUID are built-in.",
+            "homepage": "https://github.com/webpatser/uuid",
+            "keywords": [
+                "UUID RFC4122"
+            ],
+            "time": "2016-05-09 09:22:18"
         },
         {
             "name": "yajra/laravel-datatables-oracle",

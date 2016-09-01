@@ -199,6 +199,10 @@ return [
         Arcanedev\NoCaptcha\NoCaptchaServiceProvider::class,
 
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+
+        Hootlex\Friendships\FriendshipsServiceProvider::class,
+
+        RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
     ],
 
     /*
@@ -271,6 +275,8 @@ return [
         'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
         'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+
+        'Uuid' => Webpatser\Uuid\Uuid::class,
     ],
 
 ];
